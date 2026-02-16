@@ -4,3 +4,6 @@ __pycache__/
 
 # Archivos locales de prueba
 pruebas.py
+
+# Archivo de creación local (Logs y persistencia)
+datos/

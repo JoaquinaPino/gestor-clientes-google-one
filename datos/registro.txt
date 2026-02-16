@@ -1,0 +1,5 @@
+16/02/2026, 10:05:57 - [INFO] - Sistema GIC iniciado.
+16/02/2026, 10:06:45 - [INFO] - 
+Cliente creado: Ana Testing (RUT: 12-3)
+16/02/2026, 10:09:06 - [INFO] - Cambio de plan para Ana Testing: Ahora es Empresa
+16/02/2026, 10:10:05 - [INFO] - Sistema cerrado correctamente.
