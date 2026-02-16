@@ -12,9 +12,8 @@ class Plan:
     
     def set_precio(self, nuevo_precio):
         if nuevo_precio < 0:
-            print("Error: El precio no puede ser negativo")
-        else:
-            self._precio = nuevo_precio
+            raise ValueError("El precio no puede ser negativo")
+        self._precio = nuevo_precio
 
     def get_nombre(self):
         return self._nombre
@@ -39,7 +38,7 @@ class Plan:
         return self._precio
     
     def listar_beneficios(self):
-        raise NotImplementedError("Este error debe ser implementado por las clases hijas")
+        raise NotImplementedError("Este método debe ser implementado por las clases hijas")
 
 class PlanGratuito(Plan):
     def __init__(self):
@@ -66,7 +65,13 @@ class PlanPremium(Plan):
 class PlanEmpresa(Plan):
     def __init__(self, cantidad_usuarios, dominio_personalizado):
         super().__init__("Google Enterprise", 10.0, 100000)
+
+        if cantidad_usuarios < 3:
+            raise ValueError("El Plan Empresa requiere un mínimo de 3 usuarios.")
         self.__cantidad_usuarios = cantidad_usuarios
+
+        if "." not in dominio_personalizado:
+            raise ValueError("El dominio no es válido (falta el punto, ej: .com).")
         self.__dominio_personalizado = dominio_personalizado
 
     # --- GETTERS Y SETTERS ESPECIFICOS EMPRESA ---
@@ -75,9 +80,8 @@ class PlanEmpresa(Plan):
     
     def set_cantidad_usuarios(self, n):
         if n < 3:
-            print("Error: Deber haber al menos 3 usuarios")
-        else:
-            self.__cantidad_usuarios = n
+            raise ValueError("Error: Deber haber al menos 3 usuarios.")
+        self.__cantidad_usuarios = n
 
     def get_dominio(self):
         return self.__dominio_personalizado
