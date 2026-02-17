@@ -239,6 +239,7 @@ def simular_uso_espacio():
         else:
             print(f"\nError: Espacio insuficiente en el plan actual.")
             registrar_actividad(f"Usuario: {cliente.get_nombre()}, RUT:{cliente.get_rut()} falló al subir {gbs}GB (Espacio insuficiente).", es_error=True)
+            input("Presione Enter para volver... ")
 
     except Exception as e:
         print(f"\nError inesperado: {e}")
