@@ -53,7 +53,7 @@ Durante el desarrollo se abordaron y resolvieron los siguientes retos:
 
 ## Demostración
 Puede ver una demostración funcional del sistema en el siguiente enlace:
-[Enlace a YouTube]
+[Link directo a YouTube](https://youtu.be/7AVoHnSq1Y8)
 
 ---
 **Autor:** Joaquina Pino

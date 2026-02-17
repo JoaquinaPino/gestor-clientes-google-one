@@ -1,3 +1,5 @@
-16/02/2026, 21:43:31 - [INFO] - Sistema GIC iniciado.
-16/02/2026, 21:44:57 - [INFO] - Cliente creado: Juan Developer (RUT: 12934-4)
-16/02/2026, 21:46:06 - [ERROR] - Usuario: Juan Developer, RUT:12934-4 falló al subir 50.0GB (Espacio insuficiente).
+16/02/2026, 21:55:41 - [INFO] - Sistema GIC iniciado.
+16/02/2026, 21:56:56 - [INFO] - Cliente creado: Ana Developer (RUT: 1273-0)
+16/02/2026, 21:57:51 - [ERROR] - Usuario: Ana Developer, RUT:1273-0 falló al subir 50.0GB (Espacio insuficiente).
+16/02/2026, 21:59:15 - [INFO] - Cambio de plan para Ana Developer: Ahora es Empresa
+16/02/2026, 22:00:08 - [INFO] - Sistema cerrado correctamente.
